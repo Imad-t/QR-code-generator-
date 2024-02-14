@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
+    <title>Qr code generator</title>
+</head>
+<body class="outfit-re bg-bg flex flex-col justify-center items-center h-screen gap-8">
+    <img src="./assets/logo-qr-generator.svg" alt="qr gen logo" class="w-44">
+    <form id="qrForm" class="bg-input border-2 border-primary rounded-3xl p-2 flex justify-end w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2 2xl:w-5/12" style="height: 9%;">
+        <input type="text" id="link" class="bg-input h-full w-3/4 text-white text-lg font-medium placeholder:text-gray focus:outline-none focus:bg-input" placeholder="Enter an url">
+        <button id="generateButton" class="bg-primary h-full w-1/5 rounded-2xl text-white text-sm sm:text-lg">QR code</button>
+    </form>
+    <script src="./main.js"></script>
+</body>
+</html>

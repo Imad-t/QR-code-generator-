@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
+    <title>Qr code</title>
+</head>
+<body class="outfit-re bg-bg flex flex-col justify-center items-center h-screen gap-16 relative">
+    <img src="./assets/logo-qr-generator.svg" alt="qr gen logo" class="absolute w-24 left-4 top-4 xs:w-32 xs:left-16 xs:top-8">
+    
+    <div class="bg-darkBlue rounded-full flex justify-center items-center w-60 h-60  xs:h-80 xs:w-80">
+        <div id="displayQR" class="bg-white rounded-3xl flex justify-center items-center w-48 h-48 xs:w-64 xs:h-64"></div>
+    </div>
+    <span class="flex justify-center text-lg">
+        <button id="download" class="flex items-center bg-primary text-white text-sm gap-1 px-5 py-2 rounded-xl mr-3 xs:text-md xs:gap-3 xs:px-10 xs:py-4 xs:mr-6">
+            <p>Download</p> <img src="./assets/download.png" style="height: 24px;">
+        </button>
+        <button id="share" class="flex items-center bg-primary text-white text-sm gap-1 px-5 py-2 rounded-xl mr-3 xs:text-md xs:gap-3 xs:px-10 xs:py-4">
+            <p>Share</p><img src="./assets/share.png" style="height: 24px;">
+        </button>
+    </span>
+    <p id="message" class="bg-none px-6 py-3 rounded-md text-white text-3xl fixed top-4 right-8"></p>
+
+    <script src="./qr.js"></script>
+</body>
+</html>
